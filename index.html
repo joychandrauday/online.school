@@ -8,12 +8,251 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'main-btn': '#21b573',
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 
-<body>
+<body class="poppins-regular">
+    <!-- header section -->
+    <div class="home-banner bg-[#F0FFF0] h-screen pt-4 ">
+        <header class="container mx-auto">
+            <div class="navbar justify-between">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="capitalize poppins-semibold">books</a></li>
+                            <li><a class="capitalize poppins-semibold" href="courses.html">courses</a></li>
+                            <li><a class="capitalize poppins-semibold">others</a></li>
+                            <li><a class="capitalize poppins-semibold">blog</a></li>
+                        </ul>
+                    </div>
+                    <a class="cursor-pointer text-bold lg:text-3xl font-bold" href="index.html"><span
+                            class=" text-main-btn">Online.</span>school</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="capitalize poppins-semibold">book</a></li>
+                        <li><a class="capitalize poppins-semibold" href="courses.html">courses</a></li>
+                        <li><a class="capitalize poppins-semibold">others</a></li>
+                        <li><a class="capitalize poppins-semibold">blog</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn capitalize bg-main-btn text-white px-8">log in</a>
+                </div>
+            </div>
+        </header>
+        <div class="banner-elements container containerr mx-auto sm:px-4 lg:flex items-center px-4 py-8 lg:px-0 lg:py-16 ">
+            <div class="banner-left basis-2/4 text-center lg:text-left">
+                <h3 class="text-yellow">Are you ready to Learn?</h3>
+                <h1 class="font-bold capitalize lg:text-5xl text-3xl lg:py-8 ">Learn With fun<br>on <span class="text-main-btn">any schedule</span></h1>
+                <p class="text-sm text-main-btn pb-4 leading-4 capitalize w-3/4 mx-auto lg:m-0">personalized online course at reasonable price and quality is our main concern.</p>
+                <a class="btn capitalize bg-main-btn text-white px-8 rounded-3xl">get started</a>
+            </div>
+            <div class="banner-right basis-2/4 containerr lg:m-0 mt-12">
+                <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0018.jpg?raw=true" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- header section -->
+    <!-- main section -->
+    <main>
+        <div class="feature-section py-12">
+            <div class="container mx-auto">
+                <div class="feature-grid lg:grid grid-cols-4 gap-4 p-4 lg:p-0">
+                    <div class="m-5 lg:m-0 p-12 text-center flex flex-col rounded-lg items-center feature bg-[#F5FFFA] hover:shadow-2xl">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0017.jpg?raw=true" alt="" class="
+                        w-1/3">
+                        <h2 class="text-2xl pt-8 font-bold">1500+ Topic</h2>
+                        <p class="capitalize">quality notes</p>
+                    </div>
+                    <div class="m-5 lg:m-0 p-12 text-center flex flex-col rounded-lg items-center feature bg-[#F5FFFA] hover:shadow-2xl">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0014.jpg?raw=true" alt="" class="
+                        w-1/3">
+                        <h2 class="text-2xl pt-8 font-bold">80+ teachers</h2>
+                        <p class="capitalize">experienced teacher</p>
+                    </div>
+                    <div class="m-5 lg:m-0 p-12 text-center flex flex-col rounded-lg items-center feature bg-[#F5FFFA] hover:shadow-2xl">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0012.jpg?raw=true" alt="" class="
+                        w-1/3">
+                        <h2 class="text-2xl pt-8 font-bold">400+ test</h2>
+                        <p class="capitalize">weekly test</p>
+                    </div>
+                    <div class="m-5 lg:m-0 p-12 text-center flex flex-col rounded-lg items-center feature bg-[#F5FFFA] hover:shadow-2xl">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0013.jpg?raw=true" alt="" class="
+                        w-1/3">
+                        <h2 class="text-2xl pt-8 font-bold">1500+ students</h2>
+                        <p class="capitalize">active students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="online-courses">
+            <div class="container mx-auto lg:py-12 p-4">
+                <h1 class="text-[#413960] text-3xl font-bold text-center">Online Courses</h1>
+                <div class="courses-wrapper lg:grid grid-cols-3 gap-4 mt-8">
+                    <div id="singleCourse1" class="p-8 shadow-2xl rounded-2xl text-center">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0016.jpg?raw=true" alt="" id="courseBanner1" class=" mx-auto">
+                        <div class="courseDetails py-4 text-left" >
+                            <h3 id="courseTitle1" class="capitalize font-bold text-xl text-[#413960]">modern psychology</h3>
+                            <h4 id="coursePrize1" class="font-bold">1300 tk</h4>
+                            <a id="addToCart1" class="btn capitalize bg-main-btn text-white px-8 rounded-3xl mt-4">buy course</a>
+                        </div>
+                        <div class="courseBottom flex justify-around mt-4">
+                            <div class="date flex items-center capitalize">
+                                <i class="fa-solid fa-calendar-days mr-2"></i> <p>starts:april 20,2024 </p>
+                            </div>
+                            <div class="seat flex items-center capitalize">
+                                <i class="fa-solid fa-users mr-2"></i><p id="seatLeft">60 seats</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="singleCourse2" class="p-8 shadow-2xl rounded-2xl text-center">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0015.jpg?raw=true" alt="" id="courseBanner2" class=" mx-auto">
+                        <div class="courseDetails py-4 text-left" >
+                            <h3 id="courseTitle2" class="capitalize font-bold text-xl text-[#413960]">socio bookworm syndrome</h3>
+                            <h4 id="coursePrize2" class="font-bold">1300 tk</h4>
+                            <a id="addToCart2" class="btn capitalize bg-main-btn text-white px-8 rounded-3xl mt-4">buy course</a>
+                        </div>
+                        <div class="courseBottom flex justify-around mt-4">
+                            <div class="date flex items-center capitalize">
+                                <i class="fa-solid fa-calendar-days mr-2"></i> <p>starts:april 20,2024 </p>
+                            </div>
+                            <div class="seat flex items-center capitalize">
+                                <i class="fa-solid fa-users mr-2"></i><p id="seatLeft">60 seats</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="singleCourse3" class="p-8 shadow-2xl rounded-2xl text-center">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0011.jpg?raw=true" alt="" id="courseBanner3" class=" mx-auto">
+                        <div class="courseDetails py-4 text-left" >
+                            <h3 id="courseTitle3" class="capitalize font-bold text-xl text-[#413960]">time managment with project</h3>
+                            <h4 id="coursePrize3" class="font-bold">1300 tk</h4>
+                            <a id="addToCart3" class="btn capitalize bg-main-btn text-white px-8 rounded-3xl mt-4">buy course</a>
+                        </div>
+                        <div class="courseBottom flex justify-around mt-4">
+                            <div class="date flex items-center capitalize">
+                                <i class="fa-solid fa-calendar-days mr-2"></i> <p>starts:april 20,2024 </p>
+                            </div>
+                            <div class="seat flex items-center capitalize">
+                                <i class="fa-solid fa-users mr-2"></i><p id="seatLeft">60 seats</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-button text-center">
+                    <a id="addToCart" class="btn capitalize bg-main-btn text-white px-8 rounded-3xl mt-4 text-center mt-8" href="courses.html">all course</a>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-section lg:py-16 p-4 py-8">
+            <h1 class="text-[#413960] text-3xl font-bold text-center capitalize mb-8">testimonial</h1>
+            <div class="container mx-auto">
+                
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <div class="testimonial-details lg:flex items-center justify-center">
+                        <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0006.jpg?raw=true" alt="" class="w-lg:1/5 rounded-full p-8">
+                        <p class="w-lg:1/3">"Engaging, comprehensive, and well-structured! This online course exceeded my expectations. The content was delivered clearly, and the interactive exercises made learning enjoyable. Highly recommend for anyone seeking to expand their knowledge."</p>
+                    </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class="testimonial-details lg:flex items-center justify-center">
+                            <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0006.jpg?raw=true" alt="" class="lg:w-1/5 rounded-full p-8">
+                            <p class="lg:w-1/3">"Engaging, comprehensive, and well-structured! This online course exceeded my expectations. The content was delivered clearly, and the interactive exercises made learning enjoyable. Highly recommend for anyone seeking to expand their knowledge."</p>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a> 
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <div class="testimonial-details lg:flex items-center justify-center">
+                            <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0006.jpg?raw=true" alt="" class="lg:w-1/5 rounded-full p-8">
+                            <p class="lg:w-1/3">"Engaging, comprehensive, and well-structured! This online course exceeded my expectations. The con tent was delivered clearly, and the interactive exercises made learning enjoyable. Highly recommend for anyone seeking to expand their knowledge."</p>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a> 
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class="testimonial-details lg:flex items-center justify-center">
+                            <img src="https://github.com/joychandrauday/online.school/blob/main/image/IMG-20240203-WA0006.jpg?raw=true" alt="" class="lg:w-1/5 rounded-full p-8">
+                            <p class="lg:w-1/3">"Engaging, comprehensive, and well-structured! This online course exceeded my expectations. The content was delivered clearly, and the interactive exercises made learning enjoyable. Highly recommend for anyone seeking to expand their knowledge."</p>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a> 
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main section -->
+
+    <footer class="footer lg:p-16 p-8 bg-[#282531] text-white">
+        <aside>
+            <a class="cursor-pointer text-bold text-3xl font-bold" href="index.html"><span
+                class=" text-main-btn">Online.</span>school</a>
+          <p>personalized online course at reasonable price and<br>quality is our main concern.</p>
+        </aside> 
+        <nav>
+          <h6 class="footer-title">Courses</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">coding</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Useful Link</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
+
 
     <script src="/js/main.js"></script>
+    <script src="/js/tailwind.config.js"></script>
 </body>
 
 </html>
