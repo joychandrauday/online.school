@@ -2,7 +2,5 @@
 
 // adding items 
 function sendData(add) {
-    let title1=document.getElementById("courseTitle1");
-    let title1=console.log(title1.textContent)
-    document.getElementById("cartCourseTitle1").innerHTML = ($(title1));
+    document.getElementById("cartCourseTitle1").innerHTML = ('modern psychology<br>1300 tk');
 }
