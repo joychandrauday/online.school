@@ -18,14 +18,16 @@ for (let i = 0; i < courses.length; i++) {
     //price
     const coursePrizeText=course.querySelector('h4').innerText.split(' ')[0];
     const coursePrize=parseInt(coursePrizeText);
-
+    
     //total price
     const totalPrizeText=document.getElementById('subtotal').innerText.split(' ')[0];
     const totalPrize=parseInt(totalPrizeText);
-
+    
     //course seat
-    const courseSeat=course.querySelectorAll('.courseSeat');
-
+    
+    const courseSeatText=course.querySelector('.seatLeft').innerText.split(' ')[0];
+    let seatLeft=parseInt(courseSeatText);
+    
     
 
     addToCartBtn.addEventListener('click',function() {
@@ -57,10 +59,15 @@ for (let i = 0; i < courses.length; i++) {
         
         
 
+        
         const itemsNumberContainer=document.getElementById('itemsNumber');
         itemsNumberContainer.innerText=itemCounter;
         itemCounter++
+        
 
+        seatLeft=updateCourseSeat(seatLeft,1);
+        const seatNumberContainer=course.querySelector('p');
+        seatNumberContainer.innerText=seatLeft+' seats left';
 
        
         
@@ -68,7 +75,7 @@ for (let i = 0; i < courses.length; i++) {
         const totalPrizeText=document.getElementById('subtotal');
         // subTotalPrize=+coursePrize;
         // console.log(subTotalPrize)
-        totalPrizeText.innerText=subTotalPrize;
+        totalPrizeText.innerText=subTotalPrize +' tk';
 
         
     })
